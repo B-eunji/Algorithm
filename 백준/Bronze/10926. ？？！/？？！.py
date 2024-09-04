@@ -1,1 +1,2 @@
-print(input() + "??!")
+A = input()
+print(A + "??!")
