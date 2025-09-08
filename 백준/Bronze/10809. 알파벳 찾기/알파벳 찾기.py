@@ -1,9 +1,8 @@
 S = input()
-alphabet = [-1] * 26
+alphabets = [chr(ord('a')+i) for i in range(26)]
 
-for i in range(len(S)):
-    index = ord(S[i]) - ord('a')
-    if alphabet[index] == -1:
-        alphabet[index] = i
+result = []
+for ch in alphabets:
+    result.append(S.find(ch))
 
-print(" ".join(map(str,alphabet)))    
+print(*result)
