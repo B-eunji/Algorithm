@@ -1,22 +1,21 @@
-N = int(input())
-group_word_count = 0
+num = int(input())
+group = 0
 
-for i in range(N):
-    word = input()
-    seen = set()
-    prev_char = ""
-    is_group_word = True
+for _ in range(num):
+    words = input().strip()
+    seen = set() #이미 나온 문자 저장
+    prev = '' # 이전 문자 기억
+    is_group = True # 그룹 단어 여부
     
-    for char in word:
-        if char != prev_char:
-            if char in seen:
-                is_group_word = False
+    for ch in words:
+        if ch != prev:
+            if ch in seen:
+                is_group = False
                 break
-            seen.add(char)
-        prev_char = char
-    
-    if is_group_word:
-        group_word_count += 1
+            seen.add(ch)
+        prev = ch
         
-print(group_word_count)
-    
+    if is_group:
+        group += 1
+            
+print(group)
