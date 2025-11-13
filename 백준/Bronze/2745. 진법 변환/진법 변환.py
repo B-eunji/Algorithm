@@ -1,3 +1,3 @@
-N,B = input().split()
-
-print(int(N,int(B)))
+N, B = input().split()
+B = int(B)
+print(int(N, B))
