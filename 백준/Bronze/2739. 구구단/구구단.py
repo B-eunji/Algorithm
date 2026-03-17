@@ -1,3 +1,3 @@
 N = int(input())
-for i in range(1,10):
-    print(str(N) + " * " + str(i) + " = " + str(N*i))
+for A in range(1,10):
+    print(f"{N} * {A} = {N*A}")
