@@ -1,9 +1,13 @@
 T = int(input())
 
-for _ in range(T):
+
+for i in range(T):
+    result = ''
     R, S = input().split()
     R = int(R)
-    result = ""
-    for char in S:
-        result += char * R 
-    print(result)  
+    S = list(S)
+    
+    for j in range(len(S)):
+        result += S[j] * R
+    print(result)
+    
