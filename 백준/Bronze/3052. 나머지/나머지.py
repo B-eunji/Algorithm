@@ -1,7 +1,7 @@
 numbers = set()
 
-for _ in range(10):
-    N = int(input())
-    numbers.add(N % 42)
-    
+for i in range(10):
+    num = int(input())
+    numbers.add(num % 42)
+        
 print(len(numbers))
