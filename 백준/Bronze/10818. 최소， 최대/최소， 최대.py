@@ -1,4 +1,13 @@
 N = int(input())
-numbers = list(map(int,input().split()))
+numbers = list(map(int, input().split()))
 
-print (min(numbers), max(numbers))
+min = numbers[0]
+max = numbers[0]
+
+for i in range(N):
+    if min > numbers[i]:
+        min = numbers[i]
+    elif max < numbers[i]:
+        max = numbers[i]
+
+print(min,max)
